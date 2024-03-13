@@ -7,12 +7,15 @@ public class Pair {
     private final  String  from;
     private final  String  to;
 
-    public Pair(String from, String to) {
+     Pair(String from, String to) {
         this.from = from;
         this.to = to;
     }
 
-
+    /**
+     * Implements hashCode and equals so that they can be compared correctly
+     * @return boolean
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
